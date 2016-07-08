@@ -69,7 +69,72 @@ body {
 	letter-spacing: 1px;
 }
 
+.gallery-spacing {
+	letter-spacing: 1px;
+}
+
+.features-spacing {
+	letter-spacing: 1px;
+}
+
+.faq-spacing {
+	letter-spacing: 1px;
+}
+
+.contact-spacing {
+	letter-spacing: 1px;
+}
+
 .howitworks-spacing::after {
+	border-bottom: 2px solid #ffa94d;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-spacing::after {
+	border-bottom: 2px solid #ffa94d;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.faq-spacing::after {
+	border-bottom: 2px solid #ffa94d;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.features-spacing::after {
+	border-bottom: 2px solid #ffa94d;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.gallery-spacing::after {
 	border-bottom: 2px solid #ffa94d;
     content: '';
     display: block;
