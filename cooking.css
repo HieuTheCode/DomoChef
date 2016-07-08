@@ -1,0 +1,96 @@
+* {
+	font-family: 'Oswald', sans-serif;
+}
+
+body {
+	padding-top: 40px;
+}
+
+.jumbotron {
+	background-image: url("https://thumbs.dreamstime.com/z/healthy-food-background-collection-different-fruits-berries-vegetables-45074691.jpg");
+	font-family: 'Oswald', sans-serif;
+	height: 400px;
+	margin-top: 40px;	
+}
+
+.picture-container {
+	margin: 15px;
+}
+
+.picture-container img {
+	border-radius: 50%;
+	border: 1px solid #000;
+}	
+.navbar-nav > li > a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-top: 15px;
+	transition: width 2s;
+}
+
+.navbar-nav > li > a:hover {
+	border-bottom: 4px solid #32B9B9;
+    content: '';
+   	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: border-bottom .2s ease-in;
+}
+
+.navbar-header > a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	margin-top: 15px;
+	position: relative;
+}
+#my-navbar {
+	padding-bottom: 15px;
+}
+#navbar-collapse > .btn {
+	margin-top: 25px;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 5%;
+	border: 2px solid #ffffff;
+}
+
+.howitworks-spacing {
+	letter-spacing: 1px;
+}
+
+.howitworks-spacing::after {
+	border-bottom: 2px solid red;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+#howitworks {
+	padding-top: 80px;
+	margin-top: -60px;
+}
+
+#gallery {
+	padding-top: 80px;
+	margin-top: -60px;
+}
+
+#features {
+	padding-top: 80px;
+	margin-top: -60px;
+}
+
+#faq {
+	padding-top: 80px;
+	margin-top: -60px;
+}
+
+#contact {
+	padding-top: 80px;
+	margin-top: -60px;
+}
