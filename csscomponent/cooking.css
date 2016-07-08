@@ -25,16 +25,28 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	margin-top: 15px;
-	transition: width 2s;
 }
 
-.navbar-nav > li > a:hover {
-	border-bottom: 4px solid #32B9B9;
-    content: '';
-   	width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    transition: border-bottom .2s ease-in;
+.navbar-nav > li > a::after {
+  content: '';
+  background-color: #ffa94d;
+  height: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+  margin-top: 15px;
+}
+
+.navbar-nav > li > a:hover::after {
+	animation-name: line-animation;
+  	animation-duration: 0.5s;
+  	width: 100%;
+}
+
+@keyframes line-animation {
+  from { width: 0%; }
+  to { width: 100%; }
 }
 
 .navbar-header > a {
@@ -44,7 +56,7 @@ body {
 	position: relative;
 }
 #my-navbar {
-	padding-bottom: 15px;
+	
 }
 #navbar-collapse > .btn {
 	margin-top: 25px;
@@ -59,7 +71,7 @@ body {
 }
 
 .howitworks-spacing::after {
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #ffa94d;
     content: '';
     display: block;
     width: 40px;
