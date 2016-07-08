@@ -55,9 +55,7 @@ body {
 	margin-top: 15px;
 	position: relative;
 }
-#my-navbar {
-	
-}
+
 #navbar-collapse > .btn {
 	margin-top: 25px;
 	font-weight: bold;
@@ -84,26 +82,35 @@ body {
 }
 
 #howitworks {
-	padding-top: 80px;
+	padding-top: 110px;
 	margin-top: -60px;
 }
 
 #gallery {
-	padding-top: 80px;
+	padding-top: 110px;
 	margin-top: -60px;
 }
 
 #features {
-	padding-top: 80px;
+	padding-top: 110px;
 	margin-top: -60px;
 }
 
 #faq {
-	padding-top: 80px;
+	padding-top: 110px;
 	margin-top: -60px;
 }
 
 #contact {
-	padding-top: 80px;
+	padding-top: 110px;
 	margin-top: -60px;
+}
+
+section > .well {
+	height: 100%;
+	margin-top: -30px;
+}
+
+footer {
+	margin-top: -40px;
 }
