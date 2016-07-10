@@ -210,6 +210,9 @@ footer {
 	.jumbotron {
 		margin-top: -4px;
 	}
+	.jumbotron > .container {
+		padding-top: 70px;
+	}	
 }
 
 
