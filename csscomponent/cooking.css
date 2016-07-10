@@ -207,6 +207,9 @@ footer {
 	.carousel-caption > h2 {
 		font-size: 10px;
 	}
+	.jumbotron {
+		margin-top: -4px;
+	}
 }
 
 
