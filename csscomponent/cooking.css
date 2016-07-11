@@ -7,7 +7,7 @@ body {
 }
 
 .jumbotron {
-	background-image: url("http://www.pawleyspeds.com/wp-content/uploads/homecooking.jpg");
+	background-image: url("../Images/homepage.jpg");
 	font-family: 'Oswald', sans-serif;
 	height: 500px;
 	margin-top: 40px;	
@@ -15,7 +15,9 @@ body {
 }
 
 .jumbotron > .container {
-	color: #2f2f1e;
+	color: #ffffff;
+	text-shadow: 0 1px 10px #000, 0 0 30px #000;
+	padding-top: 100px;
 }
 
 
