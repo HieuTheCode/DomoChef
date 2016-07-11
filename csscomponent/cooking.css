@@ -209,7 +209,7 @@ footer {
 	text-shadow: 0 1px 10px #000, 0 0 30px #000
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.carousel-caption > h1 {
 		font-size: 16px;
 
@@ -218,10 +218,10 @@ footer {
 		font-size: 10px;
 	}
 	.jumbotron {
-		margin-top: 80px;
-		height: 300px;
-		width: 360px;
-		margin-left: 62px;
+		margin-top: 63px;
+		height: 250px;
+		width: 80%;
+		margin-left: 35px;
 	}
 	.jumbotron > .container {
 		padding-top: 40px;
@@ -241,7 +241,22 @@ footer {
 	}
 }
 
+@media (min-width: 768px) {
+	.jumbotron {
+		height: 500px;
+		width: 600px;
+		margin-left: 82px;
+		margin-top: 180px;
+	}
+	#my-navbar {
+		margin-bottom: -30px;
+	}
+
+}
+
+
+
 .hieusucks {
-	font-size: 	px;
+	font-size: 10px;
 }
 
