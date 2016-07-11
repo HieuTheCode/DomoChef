@@ -9,7 +9,7 @@ body {
 .jumbotron {
 	background-image: url("http://www.pawleyspeds.com/wp-content/uploads/homecooking.jpg");
 	font-family: 'Oswald', sans-serif;
-	height: 400px;
+	height: 550px;
 	margin-top: 40px;	
 	background-size: 100% 100%;
 }
@@ -197,10 +197,12 @@ footer {
 
 .carousel-caption > h1 {
 	font-size: 40px;
+	text-shadow: 0 1px 10px #000, 0 0 30px #000;
 }
 
 .carousel-caption > h2 {
 	font-size: 24px;
+	text-shadow: 0 1px 10px #000, 0 0 30px #000
 }
 
 @media (max-width: 768px) {
