@@ -10,8 +10,10 @@ body {
 	background-image: url("../Images/homepage.jpg");
 	font-family: 'Oswald', sans-serif;
 	height: 500px;
-	margin-top: 40px;	
+	margin-top: 75px;	
 	background-size: 100% 100%;
+	margin-right: 125px;
+	margin-left: 125px;
 }
 
 .jumbotron > .container {
@@ -216,13 +218,30 @@ footer {
 		font-size: 10px;
 	}
 	.jumbotron {
-		margin-top: -4px;
+		margin-top: 80px;
+		height: 300px;
+		width: 360px;
+		margin-left: 62px;
 	}
 	.jumbotron > .container {
-		padding-top: 70px;
-	}	
+		padding-top: 40px;
+	}
+	.jumbotron > .container > h1 {
+		font-size: 21px;
+	}
+	.jumbotron > .container > p {
+		font-size: 14px;
+	}
+	.jumbotron .btn {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.footer {
+		margin-top: -30px;
+	}
 }
 
-
-
+.hieusucks {
+	font-size: 	px;
+}
 
