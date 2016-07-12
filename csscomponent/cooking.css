@@ -79,6 +79,10 @@ body {
 	margin-left: 50px;
 }
 
+.aboutus-spacing {
+	letter-spacing: 1px;
+}
+
 .howitworks-spacing {
 	letter-spacing: 1px;
 }
@@ -160,6 +164,18 @@ body {
     margin-bottom: 15px;
 }
 
+.aboutus-spacing::after {
+	border-bottom: 2px solid #ffa94d;
+    content: '';
+    display: block;
+    width: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
 #howitworks {
 	padding-top: 110px;
 	margin-top: -60px;
@@ -181,6 +197,11 @@ body {
 }
 
 #contact {
+	padding-top: 110px;
+	margin-top: -60px;
+}
+
+#aboutus {
 	padding-top: 110px;
 	margin-top: -60px;
 }
@@ -254,9 +275,7 @@ footer {
 
 }
 
-
-
-.hieusucks {
-	font-size: 10px;
+.bigmessage {
+	font-size: 24px;
 }
 
