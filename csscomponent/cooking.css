@@ -272,7 +272,8 @@ footer {
 	#my-navbar {
 		margin-bottom: -30px;
 	}
-}
+
+	
 
 .bigmessage {
 	font-size: 24px;
@@ -286,3 +287,8 @@ footer {
 .movingmargindown {
 	margin-bottom: 40px;
 }
+
+.jumbomargin {
+	margin-bottom: 50px;
+}
+
