@@ -104,7 +104,7 @@ body {
 }
 
 .howitworks-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -116,7 +116,7 @@ body {
 }
 
 .contact-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -129,7 +129,7 @@ body {
 
 
 .faq-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -141,7 +141,7 @@ body {
 }
 
 .features-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -153,7 +153,7 @@ body {
 }
 
 .gallery-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -165,7 +165,7 @@ body {
 }
 
 .aboutus-spacing::after {
-	border-bottom: 2px solid #003399;
+	border-bottom: 2px solid #eea032;
     content: '';
     display: block;
     width: 40px;
@@ -347,8 +347,15 @@ footer {
 	}
 }
 
-.panel-body > h5 {
+.borderaroundbody > h5 {
 	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.borderaroundbody > p {
+	word-spacing: 1px;
 }
 
 .bordernumber2 {
@@ -356,13 +363,23 @@ footer {
 }
 
 .borderaroundbody {
-	border: 3px groove #eea032;
+	border: 2px solid #eea032;
+	border-radius: 10px;
 }
 
 @media (min-width: 768px) {
-	.panel-body > .paramission {
-	padding-left: 100px;
-	padding-right: 100px;
+	.borderaroundbody {
+	padding-left: 120px;
+	padding-right: 120px;
 	font-size: 16px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.borderaroundbody {
+
 	}
 }
