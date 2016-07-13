@@ -43,7 +43,7 @@ body {
 
 .navbar-nav > li > a::after {
   content: '';
-  background-color: #ffa94d;
+  background-color: #eea032;
   height: 3px;
   display: block;
   margin-left: auto;
@@ -104,7 +104,7 @@ body {
 }
 
 .howitworks-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -116,7 +116,7 @@ body {
 }
 
 .contact-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -129,7 +129,7 @@ body {
 
 
 .faq-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -141,7 +141,7 @@ body {
 }
 
 .features-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -153,7 +153,7 @@ body {
 }
 
 .gallery-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -165,7 +165,7 @@ body {
 }
 
 .aboutus-spacing::after {
-	border-bottom: 2px solid #ffa94d;
+	border-bottom: 2px solid #003399;
     content: '';
     display: block;
     width: 40px;
@@ -343,6 +343,26 @@ footer {
 
 @media (max-width: 768px) {
 	.boxalign {
-	margin-bottom: 25px;
+		margin-bottom: 25px;
+	}
+}
+
+.panel-body > h5 {
+	font-size: 24px;
+}
+
+.bordernumber2 {
+	margin-top: 20px;
+}
+
+.borderaroundbody {
+	border: 3px groove #eea032;
+}
+
+@media (min-width: 768px) {
+	.panel-body > .paramission {
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 16px;
 	}
 }
