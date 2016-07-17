@@ -548,3 +548,30 @@ footer {
 	}
 }
 
+@media (max-width: 768px) {
+	.featuredmeal img {
+		height: 100%;
+		width: 100%;
+	}
+	.featuredchef img {
+		height: 100%;
+		width: 100%;
+	}
+	.featuredmeal h3 {
+		font-size: 16px;
+	}
+	.featuredchef h3 {
+		font-size: 16px;
+	}
+	.mealsbigger {
+		width: 430px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+	.chefsbigger {
+		width: 430px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
