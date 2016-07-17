@@ -1,5 +1,5 @@
 * {
-	font-family: 'Oswald', sans-serif;
+		font-family: 'Arvo', serif;
 }
 
 body {
@@ -8,7 +8,6 @@ body {
 
 .jumbotron {
 	background-image: url("../Images/homepage.jpg");
-	font-family: 'Oswald', sans-serif;
 	height: 500px;
 	margin-top: 75px;	
 	background-size: 100% 100%;
@@ -35,10 +34,11 @@ body {
 	border-radius: 50%;
 	border: 1px solid #000;
 }	
-.navbar-nav > li > a {
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+.navbar-nav > li > a {	
+	font-size: 18px;
 	margin-top: 15px;
+	font-family: 'Playfair Display', serif;
+
 }
 
 .navbar-nav > li > a::after {
@@ -64,10 +64,11 @@ body {
 }
 
 .navbar-header > a {
-	font-family: 'Oswald', sans-serif;
-	font-size: 25px;
+	font-size: 22px;
 	margin-top: 15px;
 	position: relative;
+	font-family: 'Playfair Display', serif;
+
 }
 
 #navbar-collapse > .btn {
@@ -208,7 +209,6 @@ body {
 
 section > .well {
 	height: 100%;
-	margin-top: 100px;
 }
 
 footer {
@@ -278,6 +278,12 @@ footer {
 	font-size: 24px;
 }
 
+@media (max-width: 768px) {
+	.bigmessage {
+		margin-bottom: 20px;
+	}
+}
+
 .position {
 	font-size: 16px;
 	font-weight: 500;
@@ -337,13 +343,19 @@ footer {
 	margin-left: 100px;
 	}
 	.leftoverspace {
-	margin-left: -50px;
+		padding-top: 5%;
+	}
+	.leftabit {
+		margin-left: -35px;
 	}
 }
 
 @media (max-width: 768px) {
 	.boxalign {
 		margin-bottom: 25px;
+	}
+	.leftoverspace {
+		padding-top: 10%;
 	}
 }
 
@@ -535,3 +547,4 @@ footer {
 		padding-left: -20px;
 	}
 }
+
