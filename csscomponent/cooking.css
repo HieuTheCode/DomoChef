@@ -631,7 +631,7 @@ footer {
 	cursor: pointer;
 }
 
-.checkbox p {
+.allothercheckbox {
 	font-size: 16px;
 	padding-top: 5px;
 }
@@ -683,8 +683,10 @@ footer {
 	.checkbox p {
 		padding-left: 40px;
 	}
-
 }
 
+.cookingtime {
+	font-size: 12px;
+}
 
 

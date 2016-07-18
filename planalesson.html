@@ -75,92 +75,109 @@
 			<div class="col-xs-6 col-md-2">
 				<p class="checkcuisine">Cuisines</p>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox1">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox1">
 					<label for="checkbox1"></label>
-					<p>American</p>
+					<p class="allothercheckbox">American</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox2">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2">
 					<label for="checkbox2"></label>
-					<p>Chinese</p>
+					<p class="allothercheckbox">Chinese</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox3">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
 					<label for="checkbox3"></label>
-					<p>Mexican</p>
+					<p class="allothercheckbox">Mexican</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox4">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
 					<label for="checkbox4"></label>
-					<p>Italian</p>
+					<p class="allothercheckbox">Italian</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox5">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
 					<label for="checkbox5"></label>
-					<p>French</p>
+					<p class="allothercheckbox">French</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox6">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
 					<label for="checkbox6"></label>
-					<p>Indian</p>
+					<p class="allothercheckbox">Indian</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox7">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
 					<label for="checkbox7"></label>
-					<p>Greek</p>
+					<p class="allothercheckbox">Greek</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox8">
+					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
 					<label for="checkbox8"></label>
-					<p>Thai</p>
+					<p class="allothercheckbox">Thai</p>
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-2">
-				<p class="checkcuisine">Cuisines</p>
+				<p class="checkcuisine">Difficulty</p>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox1">
-					<label for="checkbox1"></label>
-					<p>American</p>
+					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-1">
+					<label for="checkbox-1"></label>
+					<p class="allothercheckbox">Easy</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox2">
-					<label for="checkbox2"></label>
-					<p>Chinese</p>
+					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-2">
+					<label for="checkbox-2"></label>
+					<p class="allothercheckbox">Medium</p>
 				</div>
 				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox3">
-					<label for="checkbox3"></label>
-					<p>Mexican</p>
+					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-3">
+					<label for="checkbox-3"></label>
+					<p class="allothercheckbox">Hard</p>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox4">
-					<label for="checkbox4"></label>
-					<p>Italian</p>
+				<p class="checkcuisine">Time</p>
+				<div class="checkbox cooktimespace">
+					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--1">
+					<label for="checkbox--1"></label>
+					<p class="cookingtime">30 minutes</p>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox5">
-					<label for="checkbox5"></label>
-					<p>French</p>
+				<div class="checkbox cooktimespace">
+					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--2">
+					<label for="checkbox--2"></label>
+					<p class="cookingtime">60 minutes</p>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox6">
-					<label for="checkbox6"></label>
-					<p>Indian</p>
+				<div class="checkbox cooktimespace">
+					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--3">
+					<label for="checkbox--3"></label>
+					<p class="cookingtime">90 minutes</p>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox7">
-					<label for="checkbox7"></label>
-					<p>Greek</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="chk" id="checkbox8">
-					<label for="checkbox8"></label>
-					<p>Thai</p>
+				<div class="checkbox cooktimespace">
+					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--4">
+					<label for="checkbox--4"></label>
+					<p class="cookingtime">120 minutes</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 	<!--End checkbox Different Cuisine -->
+	<script type="text/javascript">	// the selector will match all input controls of type :checkbox
+// and attach a click event handler 
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+	</script>
+
 
 	<!-- Footer -->
 
@@ -182,7 +199,6 @@
 		</div><!-- end container -->
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
