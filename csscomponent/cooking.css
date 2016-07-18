@@ -362,8 +362,8 @@ footer {
 .borderaroundbody > h5 {
 	font-size: 24px;
 	letter-spacing: 2px;
-	font-weight: 500;
-	font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .borderaroundbody > p {
@@ -381,8 +381,7 @@ footer {
 
 @media (min-width: 768px) {
 	.borderaroundbody {
-	padding-left: 120px;
-	padding-right: 120px;
+    padding: 30px 120px;
 	font-size: 16px;
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -399,33 +398,38 @@ footer {
 	}
 }
 
-.imgadded {
-	background-image: url("../Images/vr.jpg");
-	background-size: 100% 100%;
-	padding-bottom: 220px;
-	margin-bottom: 60px;
-	text-align: center;
-	color: #000000;
-	border: 3px solid #eea032;	
-	margin-left: 17px;
-	border-radius: 10px;
-	height: 350px;
-	max-width: 550px;
+
+/* === BANNER === */
+.banner {
+    position: relative;
+    max-width: 550px;
+    height: 350px;
+    padding: 0;
+    padding-bottom: 220px;
+    margin-bottom: 60px;
+    margin-left: 17px;
+    background-size: 100% 100%;
+    border: 2px solid #eea032;  
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
 }
 
-.imgadded-2 {
-	background-image: url("../Images/homecooking.jpg");
-	background-size: 100% 100%;
-	text-align: center;
-	color: #ffffff;
-	border: 3px solid #eea032;
-	border-radius: 10px;
-	padding-bottom: 220px;
-	margin-bottom: 60px;
-	margin-left: 35px;
-	text-shadow: 0 1px 10px #000, 0 0 30px #000;
-	height: 350px;
-	max-width: 550px;
+.p-home__banner-1 {
+    background-image: url("../Images/vr.jpg");
+}
+
+.p-home__banner-2 {
+    background-image: url("../Images/homecooking.jpg");
+}
+
+.banner__text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .imgadded > h4 {
@@ -492,6 +496,24 @@ footer {
 		max-width: 350px;
 	}
 }
+
+/* === HERO BANNER === */
+/* CTA */
+.p-home__hero-banner__cta {
+    padding: 18px 40px;
+    background-image: none;
+    background: #EFA63F;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.p-home__hero-banner__cta:hover {
+    color: #fff;
+}
+
 
 .mealschefsweek {
 	margin-top: 60px;
