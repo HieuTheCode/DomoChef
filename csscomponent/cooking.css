@@ -1,5 +1,5 @@
 * {
-		font-family: 'Arvo', serif;
+		font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
 .navbar-nav > li > a {	
 	font-size: 18px;
 	margin-top: 15px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Raleway', sans-serif;
 
 }
 
@@ -67,7 +67,7 @@ body {
 	font-size: 22px;
 	margin-top: 15px;
 	position: relative;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Raleway', sans-serif;
 
 }
 
@@ -482,17 +482,12 @@ footer {
 }
 
 @media (device-width: 768px) {
-	.imgadded {
-		margin-left: 5px;
-		height: auto;	
+	.imgadded {	
 		background-size: 100% 100%;
-		margin-right: -20px;
 		max-width: 350px;
 
 	}
 	.imgadded-2 {
-		margin-left: 55px;
-		height: auto;
 		background-size: 100% 100%;
 		max-width: 350px;
 	}
@@ -573,5 +568,17 @@ footer {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+.entitled {
+	border: 1px solid #eea032;
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+	.features-1-spacing {
+
 	}
 }
