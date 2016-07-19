@@ -1,5 +1,5 @@
 * {
-		font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -37,9 +37,18 @@ body {
 .navbar-nav > li > a {	
 	font-size: 18px;
 	margin-top: 15px;
-	font-family: 'Raleway', sans-serif;
-
 }
+
+@media (device-width: 768px) {
+	.container > .navbar-header {
+		height: 10px;
+	}
+	.navbar-header > a {
+		font-size: 10px;
+	}
+}
+
+
 
 .navbar-nav > li > a::after {
   content: '';
@@ -63,12 +72,12 @@ body {
   to { width: 100%; }
 }
 
+
 .navbar-header > a {
-	font-size: 22px;
+	font-size: 20px;
 	margin-top: 15px;
 	position: relative;
 	font-family: 'Raleway', sans-serif;
-
 }
 
 #navbar-collapse > .btn {
@@ -524,7 +533,7 @@ footer {
 }
 
 .featuredmeal {
-	border: 2px solid gray;
+	border: 2px solid #eea032;
 	padding-bottom: 40px;
 	margin-left: 65px;
 	margin-right: 65px;
@@ -532,7 +541,7 @@ footer {
 }
 
 .featuredchef {
-	border: 2px solid gray;
+	border: 2px solid #eea032;
 	padding-bottom: 40px;
 	margin-left: 65px;
 	margin-right: 65px;
@@ -541,16 +550,19 @@ footer {
 
 .featuredmeal > h3 {
 	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .featuredchef > h3 {
 	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .circleclass {
 	border-radius: 50%;
 	height: 180px;
 	width: 160px;
+	border: 2px double #eea032;
 }
 
 .position {
@@ -566,13 +578,19 @@ footer {
 }
 
 @media (max-width: 768px) {
-	.featuredmeal img {
-		height: 100%;
-		width: 100%;
+	.featuredmeal > img {
+		border-radius: 10px;
+		height: 10em;
+		width: 12em;
+		margin-bottom: -20px;
+		margin-top: -5px;
 	}
-	.featuredchef img {
-		height: 100%;
-		width: 100%;
+	.featuredchef > img {
+		height: 10em;
+		width: 12em;
+		border-radius: 10px;
+		margin-bottom: -20px;
+		margin-top: -5px;
 	}
 	.featuredmeal h3 {
 		font-size: 16px;
@@ -590,6 +608,42 @@ footer {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.featuredmeal > img {
+	height: 315px;
+	width: 315px;
+	border-radius: 10px;
+	}
+	.featuredchef > img {
+	height: 315px;
+	width: 315px;
+	border-radius: 10px;
+	}
+}	
+
+@media (device-width: 320px) {
+	.featuredmeal > img {
+		border-radius: 10px;
+		height: 8em;
+		width: 9em;
+		margin-bottom: -20px;
+		margin-top: -5px;
+	}
+	.featuredchef > img {
+		height: 8em;
+		width: 9em;
+		border-radius: 10px;
+		margin-bottom: -20px;
+		margin-top: -5px;
+	}
+	.featuredmeal > h3 {
+		font-size: 12px;
+	}
+	.featuredchef > h3 {
+		font-size: 12px;
 	}
 }
 
@@ -687,6 +741,193 @@ footer {
 
 .cookingtime {
 	font-size: 12px;
+}
+
+.multiselect {
+    margin: 20px 20px;
+    width: 310px;
+    margin-left: 95px;
+      }
+
+ @media (max-width: 768px) {
+	.multiselect {
+		margin-left: 5px;
+	}
+ }
+
+    .selectBox {
+        padding: 15px 15px;
+        font-size: 18px;
+        position: relative;
+        padding-left: 75px;
+
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+    } 
+
+.multiselect-2 {
+  margin-top: -35px;
+}
+
+
+#checkboxes {
+  background-color: rgb(245, 245, 245);
+  margin-top: -15px;
+  margin-left: 75px;
+  padding-top: 5px;
+  width: 220px;
+  padding-bottom: 10px;
+}
+
+#checkboxes-1 {
+  background-color: rgb(245, 245, 245);
+  margin-top: -15px;
+  margin-left: 75px;
+  padding-top: 5px;
+  width: 220px;
+  padding-bottom: 10px;
+}
+
+#checkboxes-2 {
+  background-color: rgb(245, 245, 245);
+  margin-top: -15px;
+  margin-left: 75px;
+  padding-top: 5px;
+  width: 220px;
+  padding-bottom: 10px;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+}
+
+
+#checkboxes label {
+        display: block;
+    }
+
+.img__margin__sizing {
+	margin-top: 6em;
+}
+
+.img__margin__sizing img {
+	height: 150px;
+	width: 150px;
+	border: 2px double #eea032;
+	border-radius: 15px;
+	position: relative;
+}
+
+.images-col-2 {
+	margin-left: -2.1em;
+}
+
+.images-col-3 {
+	margin-left: -2.1em;
+}
+
+.images-col-4 {
+	margin-left: -2.1em;
+}
+
+.images-col-1 {
+	margin-left: -1.7em;
+}
+
+.img__spacing {
+	margin-top: 2em;
+}
+
+
+.img-general {
+	height: 150px;
+	width: 150px;
+	border: 2px double #eea032;
+	border-radius: 15px;
+	position: relative;
+	background-size: 100% 100%;
+}
+
+.banner__text-box-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0px 0px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.img__banner-1 {
+	background-image: url("https://pleasureinlearning.files.wordpress.com/2014/08/fries_20and_20burger_1_.jpg");
+}
+
+.img__banner-2 {
+	background-image: url("http://images3.backpage.com/imager/u/large/54285926/07.jpg");
+}
+
+.img__banner-3 {
+	background-image: url("http://www.northjersey.com/polopoly_fs/1.698215!/fileImage/httpImage/chinesefood-050913-sb-tif.jpg");
+}
+
+.img__banner-4 {
+	background-image: url("http://www.szechuangardenkemah.com/wp-content/uploads/2015/04/Chinese-General-Tso-Chicken12.jpg");
+}
+
+.img__banner-5 {
+	background-image: url("http://lafenicegelato.com/wp-content/uploads/2014/09/crepes-with-chocolate.jpg");
+}
+
+.img__banner-6 {
+	background-image: url("http://images.wisegeek.com/quiche.jpg");
+}
+
+.img__banner-7 {
+	background-image: url("http://www.bestofindiamn.com/custom/1.jpg");
+}
+
+.img__banner-8 {
+	background-image: url("http://bollywoodrestaurant.ca/wp-content/uploads/2015/07/Chana-Bhatura-Bollywood-Restaurant-Brampton-Canada.jpg");
+}
+
+.img__banner-9 {
+	background-image: url("http://mummieslist.com/blog/wp-content/uploads/2015/07/pizza.jpg");
+}
+
+.img__banner-10 {
+	background-image: url("http://photo.elsoar.com/wp-content/images/Italian-Pasta-Dishe-I.jpg");
+}
+
+.img__banner-11 {
+	background-image: url("http://33xlkmrogb473k7z1dknkdmx.wpengine.netdna-cdn.com/wp-content/uploads/2016/05/sushi7.jpg");
+}
+
+.img__banner-12 {
+	background-image: url("http://search.chow.com/thumbnail/1280/800/www.chowstatic.com/assets/2014/09/30551_easy_teriyaki_chicken_3000x2000.jpg");
+}
+
+.img__banner-13 {
+	background-image: url("https://cbspittsburgh.files.wordpress.com/2012/04/tacos.jpg");
+}
+
+.img__banner-14 {
+	background-image: url("http://www.kowalskis.com/sites/kowalskis.com/files/chicken-enchiladas.jpg");
+}
+
+.img__banner-15 {
+	background-image: url("http://uvmbored.com/wp-content/uploads/2015/11/Thai-Food.jpg");
+}
+
+.img__banner-16 {
+	background-image: url("http://www.bbcgoodfood.com/sites/default/files/styles/teaser_item/public/recipe_images/recipe-image-legacy-id--593_11.jpg?itok=2xY8ZkkL");
 }
 
 

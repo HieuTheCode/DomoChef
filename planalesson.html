@@ -35,7 +35,7 @@
 
 			</div><!-- Navbar-Header -->
 			<div class="collapse navbar-collapse" id="navbar-collapse">
-			<a href="#" class="btn btn-warning navbar-btn navbar-right">LOGIN</a>
+			<a href="login.html" class="btn btn-warning navbar-btn navbar-right">LOGIN</a>
 			<a href="signup.html" class="btn btn-warning navbar-btn navbar-right">SIGN UP</a>
 				<ul class="nav navbar-nav">
 					<li><a href="aboutus.html">About Us</a></li>
@@ -55,13 +55,13 @@
 			<div class="col-lg-6 col-sm-12 mealsbigger text-center">
 				<div class="featuredmeal text-center">
 					<h3>Featured meal of the week</h3>
-					<img src="http://placehold.it/315x315" />
+					<img src="https://www.ramenramenramen.net/wp-images/Red-Ramen-Burger.jpg" />
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-12 chefsbigger">
 				<div class="featuredchef text-center">
 					<h3>Featured chef of the week</h3>
-					<img src="http://placehold.it/315x315" />
+					<img src="http://www.urbansplatter.com/wp-content/uploads/2014/07/300.ramsay.hellskitchen.070808.jpg" />
 				</div>
 			</div>
 		</div>
@@ -69,93 +69,221 @@
 
 
 
-	<!-- Checkbox Different Cuisine -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-6 col-md-2">
-				<p class="checkcuisine">Cuisines</p>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox1">
-					<label for="checkbox1"></label>
-					<p class="allothercheckbox">American</p>
+	<!-- Checkbox Different Cuisine -->	
+	<div class="row">
+		<form class="col-md-4">
+			<div class="filters">
+				<div class="ui-group">
+					<div class="multiselect">
+				    	<div class="selectBox" onclick="showCheckboxes('checkboxes')">
+				            <select>
+				                <option class="cuisiness">Cuisines</option>
+				            </select>
+				            <div class="overSelect"></div>
+				        </div>
+				        <div id="checkboxes">
+				            <div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox1">
+								<label for="checkbox1"></label>
+								<p class="allothercheckbox">American</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2">
+								<label for="checkbox2"></label>
+								<p class="allothercheckbox">Chinese</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
+								<label for="checkbox3"></label>
+								<p class="allothercheckbox">French</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
+								<label for="checkbox4"></label>
+								<p class="allothercheckbox">Indian</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
+								<label for="checkbox5"></label>
+								<p class="allothercheckbox">Italian</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
+								<label for="checkbox6"></label>
+								<p class="allothercheckbox">Japanese</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
+								<label for="checkbox7"></label>
+								<p class="allothercheckbox">Mexican</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
+								<label for="checkbox8"></label>
+								<p class="allothercheckbox">Thai</p>
+							</div>
+				    	</div>
+				    </div>
+			    </div>
+			
+			
+				<div class="multiselect multiselect-2">
+			    	<div class="selectBox" onclick="showCheckboxes('checkboxes-1')">
+			            <select>
+			                <option>Difficulty</option>
+			            </select>
+			            <div class="overSelect"></div>
+			        </div>
+			        <div id="checkboxes-1">
+						<div class="checkbox">
+							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-1">
+							<label for="checkbox-1"></label>
+							<p class="allothercheckbox">Easy</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-2">
+							<label for="checkbox-2"></label>
+							<p class="allothercheckbox">Medium</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-3">
+							<label for="checkbox-3"></label>
+							<p class="allothercheckbox">Hard</p>
+						</div>
+					 </div>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2">
-					<label for="checkbox2"></label>
-					<p class="allothercheckbox">Chinese</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
-					<label for="checkbox3"></label>
-					<p class="allothercheckbox">Mexican</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
-					<label for="checkbox4"></label>
-					<p class="allothercheckbox">Italian</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
-					<label for="checkbox5"></label>
-					<p class="allothercheckbox">French</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
-					<label for="checkbox6"></label>
-					<p class="allothercheckbox">Indian</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
-					<label for="checkbox7"></label>
-					<p class="allothercheckbox">Greek</p>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
-					<label for="checkbox8"></label>
-					<p class="allothercheckbox">Thai</p>
+			
+			    <div class="multiselect multiselect-2">
+			    	<div class="selectBox" onclick="showCheckboxes('checkboxes-2')">
+			            <select>
+			                <option>Time</option>
+			            </select>
+			            <div class="overSelect"></div>
+			        </div>
+			        <div id="checkboxes-2">
+						<div class="checkbox cooktimespace">
+							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--1">
+							<label for="checkbox--1"></label>
+							<p class="cookingtime">30 minutes</p>
+						</div>
+						<div class="checkbox cooktimespace">
+							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--2">
+							<label for="checkbox--2"></label>
+							<p class="cookingtime">60 minutes</p>
+						</div>
+						<div class="checkbox cooktimespace">
+							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--3">
+							<label for="checkbox--3"></label>
+							<p class="cookingtime">90 minutes</p>
+						</div>
+						<div class="checkbox cooktimespace">
+							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--4">
+							<label for="checkbox--4"></label>
+							<p class="cookingtime">120 minutes</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-xs-6 col-md-2">
-				<p class="checkcuisine">Difficulty</p>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-1">
-					<label for="checkbox-1"></label>
-					<p class="allothercheckbox">Easy</p>
+		</form>
+
+		<div class="grid">
+			<div class="col-md-2 images-col-1 img__margin__sizing">
+				<div class="img__spacing img-general img__banner-1 ham-fries">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-2">
-					<label for="checkbox-2"></label>
-					<p class="allothercheckbox">Medium</p>
+				<div class="img__spacing img-general img__banner-2 steak">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<div class="checkbox">
-					<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-3">
-					<label for="checkbox-3"></label>
-					<p class="allothercheckbox">Hard</p>
+				<div class="img__spacing img-general img__banner-3 chowmein">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<p class="checkcuisine">Time</p>
-				<div class="checkbox cooktimespace">
-					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--1">
-					<label for="checkbox--1"></label>
-					<p class="cookingtime">30 minutes</p>
+				<div class="img__spacing img-general img__banner-4 orange-chicken">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<div class="checkbox cooktimespace">
-					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--2">
-					<label for="checkbox--2"></label>
-					<p class="cookingtime">60 minutes</p>
+			</div>
+
+			<div class="col-md-2 images-col-2 img__margin__sizing">
+				<div class="img__spacing img-general img__banner-5 crepe">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<div class="checkbox cooktimespace">
-					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--3">
-					<label for="checkbox--3"></label>
-					<p class="cookingtime">90 minutes</p>
+				<div class="img__spacing img-general img__banner-6 quiche">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
-				<div class="checkbox cooktimespace">
-					<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--4">
-					<label for="checkbox--4"></label>
-					<p class="cookingtime">120 minutes</p>
+				<div class="img__spacing img-general img__banner-7 chicken-tikka-masala">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-8 chana-bhatura">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 images-col-3 img__margin__sizing">
+				<div class="img__spacing img-general img__banner-9 margherita-pizza">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-10 spaghetti">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-11 sushi">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-12 teriyaki-chicken">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 images-col-4 img__margin__sizing">
+				<div class="img__spacing img-general img__banner-13 taco">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-14 quesadilla">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-15 padthai">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-16 thaiprawns">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		
+	</script>
 	
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 	<!--End checkbox Different Cuisine -->
@@ -176,6 +304,20 @@ $("input:checkbox").on('click', function() {
     $box.prop("checked", false);
   }
 });
+	</script>
+
+	<script>
+    var expanded = false;
+    function showCheckboxes(name) {
+        var checkboxes = document.getElementById(name);
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
 	</script>
 
 
