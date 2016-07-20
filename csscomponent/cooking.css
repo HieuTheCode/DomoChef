@@ -436,6 +436,13 @@ footer {
     color: #000000;
 }
 
+.banner > h4 {
+	font-size: 30px;
+	margin-top: .8em;
+	font-weight: bold;
+	color: #e60000 ;
+}
+
 .p-home__banner-1 {
     background-image: url("../Images/vr.jpg");
 }
@@ -1043,3 +1050,4 @@ span.showbodyofdisplayonhover {
 	width: 80px;
 	margin-top: -20px;
 }
+
