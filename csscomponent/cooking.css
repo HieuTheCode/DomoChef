@@ -826,20 +826,8 @@ footer {
 	position: relative;
 }
 
-.images-col-2 {
-	margin-left: -2.1em;
-}
-
-.images-col-3 {
-	margin-left: -2.1em;
-}
-
-.images-col-4 {
-	margin-left: -2.1em;
-}
-
 .images-col-1 {
-	margin-left: -1.7em;
+	margin-left: -1.5em;
 }
 
 .img__spacing {
@@ -952,4 +940,9 @@ footer {
 	content: '';
 	display: block;
 	clear:both;
+}
+
+.defaulttime {
+	font-size: 14px;
+	padding-top: 5px;
 }
