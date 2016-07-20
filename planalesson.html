@@ -14,16 +14,13 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
-  	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="csscomponent/cooking.css">
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar">
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar"> 
+	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -71,7 +68,7 @@
 
 
 
-	<!-- Checkbox Different Cuisine -->	
+	<!-- Checkbox Different Cuisine -->
 	<div class="row">
 		<form class="col-md-4">
 			<div class="filters">
@@ -84,60 +81,60 @@
 					        <div class="overSelect"></div>
 					        </div>
 					        <div id="checkboxes" class="checkbox-group" data-filter-group="cuisines">
-					        	<div class="checkbox">
-								<input type="checkbox" class="radio is-checked" value="1" name="cuisine[1][]" id="checkbox1" data-filter=".american">
-								<label for="checkbox1"></label>
-								<p class="allothercheckbox">American</p>
+					        	<div class="checkbox" data-filter=".american">
+									<input type="checkbox" class="radio is-checked" value="1" name="cuisine[1][]" id="checkbox1">
+									<label for="checkbox1"></label>
+									<p class="allothercheckbox">American</p>
+								</div>
+								<div class="checkbox" data-filter=".chinese">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2" >
+									<label for="checkbox2"></label>
+									<p class="allothercheckbox">Chinese</p>
+								</div>
+								<div class="checkbox" data-filter=".french">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
+									<label for="checkbox3"></label>
+									<p class="allothercheckbox">French</p>
+								</div>
+								<div class="checkbox" data-filter=".indian">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
+									<label for="checkbox4"></label>
+									<p class="allothercheckbox">Indian</p>
+								</div>
+								<div class="checkbox" data-filter=".italian">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
+									<label for="checkbox5"></label>
+									<p class="allothercheckbox">Italian</p>
+								</div>
+								<div class="checkbox" data-filter=".japanese">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
+									<label for="checkbox6"></label>
+									<p class="allothercheckbox">Japanese</p>
+								</div>
+								<div class="checkbox" data-filter=".mexican">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
+									<label for="checkbox7"></label>
+									<p class="allothercheckbox">Mexican</p>
+								</div>
+								<div class="checkbox" data-filter=".thai">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
+									<label for="checkbox8"></label>
+									<p class="allothercheckbox">Thai</p>
+								</div>
 							</div>
-							<div class="checkbox" data-filter=".chinese">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2" >
-								<label for="checkbox2"></label>
-								<p class="allothercheckbox">Chinese</p>
-							</div>
-							<div class="checkbox" data-filter=".french">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
-								<label for="checkbox3"></label>
-								<p class="allothercheckbox">French</p>
-							</div>
-							<div class="checkbox" data-filter=".indian">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
-								<label for="checkbox4"></label>
-								<p class="allothercheckbox">Indian</p>
-							</div>
-							<div class="checkbox" data-filter=".italian">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
-								<label for="checkbox5"></label>
-								<p class="allothercheckbox">Italian</p>
-							</div>
-							<div class="checkbox" data-filter=".japanese">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
-								<label for="checkbox6"></label>
-								<p class="allothercheckbox">Japanese</p>
-							</div>
-							<div class="checkbox" data-filter=".mexican">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
-								<label for="checkbox7"></label>
-								<p class="allothercheckbox">Mexican</p>
-							</div>
-							<div class="checkbox" data-filter=".thai">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
-								<label for="checkbox8"></label>
-								<p class="allothercheckbox">Thai</p>
-							</div>
-						</div>
 				    	</div>
 				</div>
-		
-			
+
+
 				<div class="ui-group">
 					<div class="multiselect multiselect-2">
-					    	<div class="selectBox" onclick="showCheckboxes('checkboxes-1')">
-					            <select>
-					                <option>Difficulty</option>
-					            </select>
-					            <div class="overSelect"></div>
-					        </div>
-				        	<div id="checkboxes-1" class="checkbox-group" data-filter-group="difficulty">
+				    	<div class="selectBox" onclick="showCheckboxes('checkboxes-1')">
+				            <select>
+				                <option>Difficulty</option>
+				            </select>
+				            <div class="overSelect"></div>
+				        </div>
+			        	<div id="checkboxes-1" class="checkbox-group" data-filter-group="difficulty">
 							<div class="checkbox">
 								<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-1">
 								<label for="checkbox-1"></label>
@@ -156,8 +153,8 @@
 						</div>
 					</div>
 				</div>
-					
-				<div class="ui-group">	
+
+				<div class="ui-group">
 					<div class="multiselect multiselect-2">
 					    	<div class="selectBox" onclick="showCheckboxes('checkboxes-2')">
 					            <select>
@@ -192,8 +189,8 @@
 			</div>
 		</form>
 
-		<div class="grid">
-			<div class="col-md-2 images-col-1 img__margin__sizing">
+		<div class="col-md-8">
+			<div class="grid images-col-1 img__margin__sizing">
 				<div class="img__spacing img-general img__banner-1 ham-fries american">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
@@ -214,9 +211,7 @@
 						<h4>Message</h4>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-md-2 images-col-2 img__margin__sizing">
 				<div class="img__spacing img-general img__banner-5 crepe">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
@@ -237,9 +232,7 @@
 						<h4>Message</h4>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-md-2 images-col-3 img__margin__sizing">
 				<div class="img__spacing img-general img__banner-9 margherita-pizza">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
@@ -260,9 +253,7 @@
 						<h4>Message</h4>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-md-2 images-col-4 img__margin__sizing">
 				<div class="img__spacing img-general img__banner-13 taco">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
@@ -286,12 +277,13 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Javascript for Isotope -->
-	</script>
-	
+
 	<!--End checkbox Different Cuisine -->
 	<script type="text/javascript">	// the selector will match all input controls of type :checkbox
-// and attach a click event handler 
+// and attach a click event handler
 $("input:checkbox").on('click', function() {
   // in the handler, 'this' refers to the box clicked on
   var $box = $(this);
@@ -345,7 +337,8 @@ $("input:checkbox").on('click', function() {
 	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
