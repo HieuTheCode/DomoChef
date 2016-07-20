@@ -26,6 +26,10 @@ body {
 	margin-top: 17px;
 }
 
+.navbar-default {
+	
+}
+
 .picture-container {
 	margin: 15px;
 }
@@ -35,7 +39,7 @@ body {
 	border: 1px solid #000;
 }	
 .navbar-nav > li > a {	
-	font-size: 18px;
+	font-size: 22px;
 	margin-top: 15px;
 }
 
@@ -366,6 +370,14 @@ footer {
 	.leftoverspace {
 		padding-top: 10%;
 	}
+}
+
+.borderaroundbody {
+	margin-top: -4em;
+}
+
+.borderaroundbody1 {
+	margin-top: 1em;
 }
 
 .borderaroundbody > h5 {
@@ -831,19 +843,19 @@ footer {
 }
 
 .img__spacing {
-	margin-top: 2em;
+	margin-top: -2em;
 	margin-left: 8em;
 	margin-right: -5em;
+	margin-bottom: 7em;
 }
 
 
 .img-general {
-	height: 150px;
-	width: 150px;
-	border: 2px double #eea032;
-	border-radius: 15px;
+	height: 220px;
+	width: 220px;
+	border-radius: 10px;
 	position: relative;
-	background-size: 100% 100%;
+	background-size: 100% 100%
 }
 
 .banner__text-box-2 {
@@ -851,9 +863,12 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-top: 0px 0px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     text-align: center;
+    line-height: 10px;
+    font-weight: bolder;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .img__banner-1 {
@@ -948,8 +963,15 @@ footer {
 }
 
 .banner__text-box-2 > h4 {
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	letter-spacing: 4px;
+}
+
+.banner__text-box-2 > p {
+	margin-top: 5px;
+	letter-spacing: 1px;
 }
 
 a.hideDisplay {
@@ -965,22 +987,22 @@ a.hideDisplay:hover {
 
 a.hideDisplay span.showdisplayonhover {
 	display:none;
+	position: absolute;
+	font-size: 16px;
+	line-height: 25px;
+	left: 8.9em;
+	width: 13.8em;
+	height: 14em;
+	font-weight: bold;
+	border-radius: 15px;
+	margin-left: -30px;
+	background-color: rgba(245, 245, 245, 0.9);
+	margin-top: -31px;
 }
 
 a.hideDisplay:hover span.showdisplayonhover {
 	display: block;
-	position: absolute;
-	font-size: 16px;
-	line-height: 25px;
-	top: -4em;
-	left: 9em;
-	width: 9em;
-	height: 6em;
-	border: 2px double #CC3333;
-	font-weight: bold;
-	margin-left: -30px;
-	border-radius: 15px;
-	background-color: rgb(245, 245, 245);
+		
 }
 
 
@@ -989,3 +1011,35 @@ span.showbodyofdisplayonhover {
 	font-weight: normal;
 }
 
+.stars {
+	margin-left: 10px;
+	font-weight: bolder;
+}
+
+.iconsize {
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+}
+
+.picture-container img {
+	border: 2px solid #eea032;
+}
+
+.iconheader {
+	letter-spacing: 2px;
+}
+
+.iconparagraph {
+	font-size: 20px;
+}
+
+.moveituphowitworks {
+	margin-top: 1.3em;
+}
+
+.domocheflogo {
+	height: 80px;
+	width: 80px;
+	margin-top: -20px;
+}
