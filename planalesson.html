@@ -307,15 +307,12 @@ $("input:checkbox").on('click', function() {
 	</script>
 
 	<script>
-    var expanded = false;
     function showCheckboxes(name) {
         var checkboxes = document.getElementById(name);
-        if (!expanded) {
-            checkboxes.style.display = "block";
-            expanded = true;
-        } else {
+		if (checkboxes.style.display !== "none") {
             checkboxes.style.display = "none";
-            expanded = false;
+        } else {
+            checkboxes.style.display = "block";
         }
     }
 	</script>
