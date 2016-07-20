@@ -826,24 +826,14 @@ footer {
 	position: relative;
 }
 
-.images-col-2 {
-	margin-left: -2.1em;
-}
-
-.images-col-3 {
-	margin-left: -2.1em;
-}
-
-.images-col-4 {
-	margin-left: -2.1em;
-}
-
 .images-col-1 {
-	margin-left: -1.7em;
+	margin-left: -1.5em;
 }
 
 .img__spacing {
 	margin-top: 2em;
+	margin-left: 8em;
+	margin-right: -5em;
 }
 
 
@@ -930,4 +920,72 @@ footer {
 	background-image: url("http://www.bbcgoodfood.com/sites/default/files/styles/teaser_item/public/recipe_images/recipe-image-legacy-id--593_11.jpg?itok=2xY8ZkkL");
 }
 
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ui group */
+
+.ui-group {
+  display: inline-block;
+}
+
+.ui-group .checkbox-group {
+	display: inline-block;
+}
+
+.checkbox-group:after {
+	content: '';
+	display: block;
+	clear:both;
+}
+
+.defaulttime {
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.banner__text-box-2 > h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+a.hideDisplay {
+	position: relative;
+	z-index: 20;
+	color: black;
+	text-decoration: none;
+}
+
+a.hideDisplay:hover {
+	z-index: 30;
+}
+
+a.hideDisplay span.showdisplayonhover {
+	display:none;
+}
+
+a.hideDisplay:hover span.showdisplayonhover {
+	display: block;
+	position: absolute;
+	font-size: 16px;
+	line-height: 25px;
+	top: -4em;
+	left: 9em;
+	width: 9em;
+	height: 6em;
+	border: 2px double #CC3333;
+	font-weight: bold;
+	margin-left: -30px;
+	border-radius: 15px;
+	background-color: rgb(245, 245, 245);
+}
+
+
+span.showbodyofdisplayonhover {
+	font-size: 10px;
+	font-weight: normal;
+}
 

@@ -15,13 +15,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="csscomponent/cooking.css">
-
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar">
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar"> 
+	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -41,7 +40,6 @@
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="howitworks.html">How it works</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="features.html">Features</a></li>
 					<li><a href="faq.html">FAQ</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
@@ -55,7 +53,7 @@
 			<div class="col-lg-6 col-sm-12 mealsbigger text-center">
 				<div class="featuredmeal text-center">
 					<h3>Featured meal of the week</h3>
-					<img src="https://www.ramenramenramen.net/wp-images/Red-Ramen-Burger.jpg" />
+					<img src="http://static1.squarespace.com/static/54c1c885e4b0f7430cadafdd/54c3097ee4b0f7430cb3c291/54c338d4e4b02a2061b45509/1442989443406/?format=1500w" />
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-12 chefsbigger">
@@ -69,210 +67,229 @@
 
 
 
-	<!-- Checkbox Different Cuisine -->	
+	<!-- Checkbox Different Cuisine -->
 	<div class="row">
 		<form class="col-md-4">
 			<div class="filters">
 				<div class="ui-group">
 					<div class="multiselect">
-				    	<div class="selectBox" onclick="showCheckboxes('checkboxes')">
+					    	<div class="selectBox" onclick="showCheckboxes('checkboxes')">
+					            <select>
+					                <option class="cuisiness">Cuisines</option>
+					            </select>
+					        <div class="overSelect"></div>
+					        </div>
+					        <div id="checkboxes" class="checkbox-group" data-filter-group="cuisines">
+					        	<div class="checkbox" data-filter=".all">
+									<input type="checkbox" class="radio is-checked" value="1" name="cuisine[1][]" id="checkbox">
+									<label for="checkbox"></label>
+									<p class="allothercheckbox">All</p>
+								</div>
+					        	<div class="checkbox" data-filter=".american">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox1">
+									<label for="checkbox1"></label>
+									<p class="allothercheckbox">American</p>
+								</div>
+								<div class="checkbox" data-filter=".chinese">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2" >
+									<label for="checkbox2"></label>
+									<p class="allothercheckbox">Chinese</p>
+								</div>
+								<div class="checkbox" data-filter=".french">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
+									<label for="checkbox3"></label>
+									<p class="allothercheckbox">French</p>
+								</div>
+								<div class="checkbox" data-filter=".indian">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
+									<label for="checkbox4"></label>
+									<p class="allothercheckbox">Indian</p>
+								</div>
+								<div class="checkbox" data-filter=".italian">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
+									<label for="checkbox5"></label>
+									<p class="allothercheckbox">Italian</p>
+								</div>
+								<div class="checkbox" data-filter=".japanese">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
+									<label for="checkbox6"></label>
+									<p class="allothercheckbox">Japanese</p>
+								</div>
+								<div class="checkbox" data-filter=".mexican">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
+									<label for="checkbox7"></label>
+									<p class="allothercheckbox">Mexican</p>
+								</div>
+								<div class="checkbox" data-filter=".thai">
+									<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
+									<label for="checkbox8"></label>
+									<p class="allothercheckbox">Thai</p>
+								</div>
+							</div>
+				    </div>
+				</div>
+
+
+				<div class="ui-group">
+					<div class="multiselect multiselect-2">
+				    	<div class="selectBox" onclick="showCheckboxes('checkboxes-1')">
 				            <select>
-				                <option class="cuisiness">Cuisines</option>
+				                <option>Difficulty</option>
 				            </select>
 				            <div class="overSelect"></div>
 				        </div>
-				        <div id="checkboxes">
-				            <div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox1">
-								<label for="checkbox1"></label>
-								<p class="allothercheckbox">American</p>
+			        	<div id="checkboxes-1" class="checkbox-group" data-filter-group="difficulty">
+							<div class="checkbox" data-filter=".all">
+								<input type="checkbox" class="radio is-checked" value="1" name="cuisine[2][]" id="checkbox-1">
+								<label for="checkbox-1"></label>
+								<p class="allothercheckbox">Default</p>
 							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox2">
-								<label for="checkbox2"></label>
-								<p class="allothercheckbox">Chinese</p>
+							<div class="checkbox" data-filter=".easy">
+								<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-2">
+								<label for="checkbox-2"></label>
+								<p class="allothercheckbox">Easy</p>
 							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]"id="checkbox3">
-								<label for="checkbox3"></label>
-								<p class="allothercheckbox">French</p>
+							<div class="checkbox" data-filter=".medium">
+								<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-3">
+								<label for="checkbox-3"></label>
+								<p class="allothercheckbox">Medium</p>
 							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox4">
-								<label for="checkbox4"></label>
-								<p class="allothercheckbox">Indian</p>
+							<div class="checkbox" data-filter=".hard">
+								<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-4">
+								<label for="checkbox-4"></label>
+								<p class="allothercheckbox">Hard</p>
 							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox5">
-								<label for="checkbox5"></label>
-								<p class="allothercheckbox">Italian</p>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox6">
-								<label for="checkbox6"></label>
-								<p class="allothercheckbox">Japanese</p>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox7">
-								<label for="checkbox7"></label>
-								<p class="allothercheckbox">Mexican</p>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" class="radio" value="1" name="cuisine[1][]" id="checkbox8">
-								<label for="checkbox8"></label>
-								<p class="allothercheckbox">Thai</p>
-							</div>
-				    	</div>
-				    </div>
-			    </div>
-			
-			
-				<div class="multiselect multiselect-2">
-			    	<div class="selectBox" onclick="showCheckboxes('checkboxes-1')">
-			            <select>
-			                <option>Difficulty</option>
-			            </select>
-			            <div class="overSelect"></div>
-			        </div>
-			        <div id="checkboxes-1">
-						<div class="checkbox">
-							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-1">
-							<label for="checkbox-1"></label>
-							<p class="allothercheckbox">Easy</p>
 						</div>
-						<div class="checkbox">
-							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-2">
-							<label for="checkbox-2"></label>
-							<p class="allothercheckbox">Medium</p>
-						</div>
-						<div class="checkbox">
-							<input type="checkbox" class="radio" value="1" name="cuisine[2][]" id="checkbox-3">
-							<label for="checkbox-3"></label>
-							<p class="allothercheckbox">Hard</p>
-						</div>
-					 </div>
+					</div>
 				</div>
-			
-			    <div class="multiselect multiselect-2">
-			    	<div class="selectBox" onclick="showCheckboxes('checkboxes-2')">
-			            <select>
-			                <option>Time</option>
-			            </select>
-			            <div class="overSelect"></div>
-			        </div>
-			        <div id="checkboxes-2">
-						<div class="checkbox cooktimespace">
-							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--1">
-							<label for="checkbox--1"></label>
-							<p class="cookingtime">30 minutes</p>
-						</div>
-						<div class="checkbox cooktimespace">
-							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--2">
-							<label for="checkbox--2"></label>
-							<p class="cookingtime">60 minutes</p>
-						</div>
-						<div class="checkbox cooktimespace">
-							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--3">
-							<label for="checkbox--3"></label>
-							<p class="cookingtime">90 minutes</p>
-						</div>
-						<div class="checkbox cooktimespace">
-							<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--4">
-							<label for="checkbox--4"></label>
-							<p class="cookingtime">120 minutes</p>
+
+				<div class="ui-group">
+					<div class="multiselect multiselect-2">
+					    	<div class="selectBox" onclick="showCheckboxes('checkboxes-2')">
+					            <select>
+					                <option>Time</option>
+					            </select>
+					            <div class="overSelect"></div>
+					        </div>
+					        <div id="checkboxes-2" class="checkbox-group" data-filter-group="time">
+					        <div class="checkbox" data-filter=".all">
+								<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--1">
+								<label for="checkbox--1"></label>
+								<p class="cookingtime defaulttime">Default</p>
+							</div>
+							<div class="checkbox" data-filter=".twenty">
+								<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--2">
+								<label for="checkbox--2"></label>
+								<p class="cookingtime">20 minutes</p>
+							</div>
+							<div class="checkbox" data-filter=".forty">
+								<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--3">
+								<label for="checkbox--3"></label>
+								<p class="cookingtime">40 minutes</p>
+							</div>
+							<div class="checkbox" data-filter=".sixty">
+								<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--4">
+								<label for="checkbox--4"></label>
+								<p class="cookingtime">60 minutes</p>
+							</div>
+							<div class="checkbox" data-filter=".eighty">
+								<input type="checkbox" class="radio" value="1" name="cuisine[3][]" id="checkbox--5">
+								<label for="checkbox--5"></label>
+								<p class="cookingtime">80 minutes</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</form>
 
-		<div class="grid">
-			<div class="col-md-2 images-col-1 img__margin__sizing">
-				<div class="img__spacing img-general img__banner-1 ham-fries">
-					<div class="banner__text-box-2">
-						<h4>Message</h4>
+		<div class="col-md-8 col-md-pull-1">
+			<div class="grid images-col-1 img__margin__sizing">
+				<a class="hideDisplay">
+					<div class="img__spacing img-general img__banner-12 teriyaki-chicken japanese all easy forty">
+						<div class="banner__text-box-2">
+							<h4>Japanese Rice Bowl</h4>
+						</div>
 					</div>
-				</div>
-				<div class="img__spacing img-general img__banner-2 steak">
-					<div class="banner__text-box-2">
-						<h4>Message</h4>
-					</div>
-				</div>
-				<div class="img__spacing img-general img__banner-3 chowmein">
-					<div class="banner__text-box-2">
-						<h4>Message</h4>
-					</div>
-				</div>
-				<div class="img__spacing img-general img__banner-4 orange-chicken">
-					<div class="banner__text-box-2">
-						<h4>Message</h4>
-					</div>
-				</div>
-			</div>
+					<span class="showdisplayonhover text-center">
+						Heading<br>
+						<span class="showbodyofdisplayonhover text-center">
+							Description goes here
+						</span>
+					</span>
+				</a>
 
-			<div class="col-md-2 images-col-2 img__margin__sizing">
-				<div class="img__spacing img-general img__banner-5 crepe">
+				<div class="img__spacing img-general img__banner-3 chowmein chinese all medium sixty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-6 quiche">
+				<div class="img__spacing img-general img__banner-1 ham-fries american all easy twenty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-7 chicken-tikka-masala">
+				<div class="img__spacing img-general img__banner-4 orange-chicken chinese all easy forty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-8 chana-bhatura">
+				<div class="img__spacing img-general img__banner-5 crepe french all medium twenty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-			</div>
-
-			<div class="col-md-2 images-col-3 img__margin__sizing">
-				<div class="img__spacing img-general img__banner-9 margherita-pizza">
+				<div class="img__spacing img-general img__banner-2 steak american all medium forty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-10 spaghetti">
+				<div class="img__spacing img-general img__banner-8 chana-bhatura indian all hard sixty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-11 sushi">
+				<div class="img__spacing img-general img__banner-6 quiche french all medium eighty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-12 teriyaki-chicken">
+				<div class="img__spacing img-general img__banner-9 margherita-pizza italian all medium sixty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-			</div>
-
-			<div class="col-md-2 images-col-4 img__margin__sizing">
-				<div class="img__spacing img-general img__banner-13 taco">
+				<div class="img__spacing img-general img__banner-7 chicken-tikka-masala indian all hard">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-14 quesadilla">
+				<div class="img__spacing img-general img__banner-10 spaghetti italian all easy sixty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-15 padthai">
+				<div class="img__spacing img-general img__banner-14 quesadilla mexican all hard forty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
 				</div>
-				<div class="img__spacing img-general img__banner-16 thaiprawns">
+				<div class="img__spacing img-general img__banner-11 sushi japanese all medium forty">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-15 padthai thai all hard forty">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-13 taco mexican all easy twenty">
+					<div class="banner__text-box-2">
+						<h4>Message</h4>
+					</div>
+				</div>
+				<div class="img__spacing img-general img__banner-16 thaiprawns thai all hard eighty">
 					<div class="banner__text-box-2">
 						<h4>Message</h4>
 					</div>
@@ -281,14 +298,12 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		
-	</script>
-	
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Javascript for Isotope -->
+
 	<!--End checkbox Different Cuisine -->
 	<script type="text/javascript">	// the selector will match all input controls of type :checkbox
-// and attach a click event handler 
+// and attach a click event handler
 $("input:checkbox").on('click', function() {
   // in the handler, 'this' refers to the box clicked on
   var $box = $(this);
@@ -307,15 +322,12 @@ $("input:checkbox").on('click', function() {
 	</script>
 
 	<script>
-    var expanded = false;
     function showCheckboxes(name) {
         var checkboxes = document.getElementById(name);
-        if (!expanded) {
-            checkboxes.style.display = "block";
-            expanded = true;
-        } else {
+		if (checkboxes.style.display !== "none") {
             checkboxes.style.display = "none";
-            expanded = false;
+        } else {
+            checkboxes.style.display = "block";
         }
     }
 	</script>
@@ -343,5 +355,7 @@ $("input:checkbox").on('click', function() {
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
