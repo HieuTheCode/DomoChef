@@ -930,4 +930,24 @@ footer {
 	background-image: url("http://www.bbcgoodfood.com/sites/default/files/styles/teaser_item/public/recipe_images/recipe-image-legacy-id--593_11.jpg?itok=2xY8ZkkL");
 }
 
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
+/* ui group */
+
+.ui-group {
+  display: inline-block;
+}
+
+.ui-group .checkbox-group {
+	display: inline-block;
+}
+
+.checkbox-group:after {
+	content: '';
+	display: block;
+	clear:both;
+}
