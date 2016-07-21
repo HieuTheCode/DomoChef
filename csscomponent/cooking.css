@@ -962,13 +962,13 @@ footer {
     }
 
 .img__margin__sizing {
-	margin-top: 6em;
+	margin-top: 9.5em;
 }
 
 .img__margin__sizing img {
 	height: 150px;
 	width: 150px;
-	border: 2px double #eea032;
+	border: 2px double #eea0on32;
 	border-radius: 15px;
 	position: relative;
 }
@@ -983,7 +983,6 @@ footer {
 	margin-right: -5em;
 	margin-bottom: 8em;
 }
-
 
 .img-general {
 	height: 220px;
@@ -1309,9 +1308,9 @@ a.hideDisplay:hover {
 }
 
 .btnonjane {
-	margin-left: 10.5em;
-	margin-bottom: -47em;
 	position: absolute;
+	margin-left: 10.5em;
+	margin-top: 2.5em;
 }
 
 .card__popup.is-active {
