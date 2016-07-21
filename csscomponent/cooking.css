@@ -1276,6 +1276,42 @@ a.hideDisplay:hover {
     display: none;
 }
 
+.card__popup-box {
+	
+}
+
+.janedoeprofile {
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: -5px;
+	margin-left: .7em;
+	text-align: left;
+}
+
+.janedoemeal {
+	text-align: left;
+	margin-left: 1.2em;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.briefdescription {
+	text-align: left;
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.praisejane {
+	text-align: left;
+	margin-left: 1.45em;
+}
+
+.btnonjane {
+	margin-left: -9.5em;
+}
+
 .card__popup.is-active {
     display: block;
 }
@@ -1365,7 +1401,11 @@ a.hideDisplay:hover {
   text-transform: uppercase;
 }
 
-
+.loginfooter {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -7em;
+}
 
 
 
