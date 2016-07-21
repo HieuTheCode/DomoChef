@@ -1205,11 +1205,26 @@ span.showdisplayonhover {
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 2.5em;
+		border-radius: 10px;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.findyourchef > h3 {
+		font-size: 22px;
+
 	}
 	.becomeachef {
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 2.8em;
+		border-radius: 10px;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	.becomeachef > h3 {
+		font-size: 22px;
 	}
 }
