@@ -75,13 +75,13 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-6 txtalign">
-								<label for="password">Password</label>
+								<label for="password" >Password</label>
 							</div>
 							<div class="col-sm-6 boxalign">
-								<input type="text" class="form-control" id="password" placeholder="Enter your Password">
+								<input type="password" class="form-control" id="password" placeholder="Enter your Password">
 							</div>
 						</div>
-						<button type="submit" class="btn joinbtn btn-primary">Join</button>
+						<button type="button" class="btn joinbtn btn-primary" onclick="Register()">Join</button>
 						<hr>
 					</form>
 				</div>
@@ -112,7 +112,7 @@
 							<label for="password">Password</label>
 						</div>
 						<div class="col-sm-6 boxalign">
-							<input type="text" class="form-control" id="password" placeholder="Enter your Password">
+							<input type="password" class="form-control" id="password" placeholder="Enter your Password">
 						</div>
 					</div>
 					<button type="submit" class="btn joinbtn btn-primary">Join</button>
@@ -123,6 +123,12 @@
 		</div>
 	</div>
 
+	.<script type="text/javascript">
+	function Register() {
+    	alert("You have successfully registered!");
+    	document.location.href="Hieu-Nguyen.html";
+	}
+	</script>
 
 
 
