@@ -1448,6 +1448,24 @@ a.hideDisplay:hover {
 	margin-right: 11em;
 }
 
+@media (max-width: 768px) {
+	.bigguy {
+	margin-top: -4em;
+	margin-right: 4em;
+
+	}
+	.fakesignup {
+	padding-top: 1em;
+	margin-right: 5.5em;
+	margin-bottom: -.2em;
+	}
+	.btn-package {
+		width: 50%;
+		margin-left: 20px;
+	}
+
+}
+
 .col.three {
 	width: 100%;
 }
@@ -1455,7 +1473,7 @@ a.hideDisplay:hover {
 .btn-package {
 	font-size: 18px; 
 	white-space:nowrap; 
-	width:300px; 
+	width:26%; 
 	padding:.8em 1.5em; 
 	line-height:18px; 
 	display: inline-block;
@@ -1494,7 +1512,9 @@ a.hideDisplay:hover {
 
 .formbuttonfinal {
 	margin-top: 3em;
+	margin-left: 40.5em;
 }
+
 
 
 
