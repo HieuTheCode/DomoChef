@@ -6,13 +6,24 @@ body {
 	padding-top: 40px;
 }
 
+@media (max-width: 768px) {
+	body {
+		padding-top: 2.6em;
+	}
+}
+
 .jumbotron {
 	background-image: url("../Images/homepage.jpg");
 	height: 500px;
-	margin-top: 75px;	
 	background-size: 100% 100%;
+}
+
+@media (min-width: 768px) {
+	.jumbotron {
+	margin-top: 75px;
 	margin-right: 125px;
-	margin-left: 125px;
+	margin-left: 125px;	
+	}
 }
 
 .jumbotron > .container {
@@ -21,9 +32,18 @@ body {
 	padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+	.jumbotron > .container {
+		margin-top: -1.5em;
+	}
+}
 
 .navbar-header > .navbar-toggle {
 	margin-top: 17px;
+}
+
+.navbar-default {
+	
 }
 
 .picture-container {
@@ -35,7 +55,7 @@ body {
 	border: 1px solid #000;
 }	
 .navbar-nav > li > a {	
-	font-size: 18px;
+	font-size: 22px;
 	margin-top: 15px;
 }
 
@@ -322,6 +342,34 @@ footer {
 	margin-bottom: 45px;
 }
 
+@media (max-width: 768px) {
+	.marginfixingtime {
+		margin-left: .2em;
+		margin-right: auto;
+		width: 100%;
+		margin-bottom: 4em;
+	}
+}
+
+@media (device-width: 411px) {
+	.marginfixingtime {
+		margin-left: .7em;
+	}
+	.borderaroundbody1 {
+		margin-left: 10px;
+	}
+	.bodyonindex {
+		margin-left: .4em;
+	}
+}
+
+@media (device-width: 435px) {
+	.marginfixingtime {
+		margin-left: .5em;
+	}
+}
+
+
 
 
 .well h3 {
@@ -365,6 +413,20 @@ footer {
 	}
 	.leftoverspace {
 		padding-top: 10%;
+	}
+}
+
+.borderaroundbody {
+	margin-top: -4em;
+}
+
+.borderaroundbody1 {
+	margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+	.borderaroundbody1 {
+		margin-top: -1.7em;
 	}
 }
 
@@ -422,6 +484,25 @@ footer {
     border-radius: 10px;
     text-align: center;
     color: #000000;
+}
+
+@media (max-width: 768px) {
+	.banner {
+		margin-left: auto;
+		margin-right: auto;
+		width: 86%;
+		height: 275px;
+	}
+	.banner-1 {
+		margin-bottom: 1.5em;
+	}
+}
+
+.banner > h4 {
+	font-size: 30px;
+	margin-top: .8em;
+	font-weight: bold;
+	color: #e60000 ;
 }
 
 .p-home__banner-1 {
@@ -515,8 +596,19 @@ footer {
     text-shadow: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+	.p-home__hero-banner__cta {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.p-home__hero-banner__cta {
+		font-size: 14px;
+	}
 }
 
 .p-home__hero-banner__cta:hover {
@@ -831,19 +923,19 @@ footer {
 }
 
 .img__spacing {
-	margin-top: 2em;
+	margin-top: -2em;
 	margin-left: 8em;
 	margin-right: -5em;
+	margin-bottom: 7em;
 }
 
 
 .img-general {
-	height: 150px;
-	width: 150px;
-	border: 2px double #eea032;
-	border-radius: 15px;
+	height: 220px;
+	width: 220px;
+	border-radius: 10px;
 	position: relative;
-	background-size: 100% 100%;
+	background-size: 100% 100%
 }
 
 .banner__text-box-2 {
@@ -851,9 +943,12 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-top: 0px 0px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     text-align: center;
+    line-height: 10px;
+    font-weight: bolder;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .img__banner-1 {
@@ -948,8 +1043,15 @@ footer {
 }
 
 .banner__text-box-2 > h4 {
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	letter-spacing: 4px;
+}
+
+.banner__text-box-2 > p {
+	margin-top: 5px;
+	letter-spacing: 1px;
 }
 
 a.hideDisplay {
@@ -965,27 +1067,68 @@ a.hideDisplay:hover {
 
 a.hideDisplay span.showdisplayonhover {
 	display:none;
+	position: absolute;
+	font-size: 16px;
+	line-height: 25px;
+	left: 8.9em;
+	width: 13.8em;
+	height: 14em;
+	font-weight: bold;
+	border-radius: 15px;
+	margin-left: -30px;
+	background-color: rgba(245, 245, 245, 0.95);
+	margin-top: -31px;
 }
 
 a.hideDisplay:hover span.showdisplayonhover {
 	display: block;
-	position: absolute;
-	font-size: 16px;
-	line-height: 25px;
-	top: -4em;
-	left: 9em;
-	width: 9em;
-	height: 6em;
-	border: 2px double #CC3333;
-	font-weight: bold;
-	margin-left: -30px;
-	border-radius: 15px;
-	background-color: rgb(245, 245, 245);
 }
 
 
 span.showbodyofdisplayonhover {
-	font-size: 10px;
+	font-size: px;
 	font-weight: normal;
 }
 
+span.showdisplayonhover {
+	font-size: 24px;
+}
+
+.stars {
+	margin-left: 10px;
+	font-weight: bolder;
+}
+
+.iconsize {
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+}
+
+.picture-container img {
+	border: 2px solid #eea032;
+}
+
+.iconheader {
+	letter-spacing: 2px;
+}
+
+.iconparagraph {
+	font-size: 20px;
+}
+
+.moveituphowitworks {
+	margin-top: 1.3em;
+}
+
+.domocheflogo {
+	height: 80px;
+	width: 80px;
+	margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+	.domocheflogo {
+		margin-top: -1.4em;
+	}
+}
