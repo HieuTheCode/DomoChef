@@ -90,8 +90,18 @@
 				<input type="text" class="form-control" id="email" placeholder="Amount of people">
 			</div>
 		</div>
-		<button type="submit" class="btn formbuttonfinal btn-primary">Submit!</button>
+		<div class="row">
+		<button type="button" onclick="Submitted()" class="btn formbuttonfinal btn-primary">Submit!</button>
+		</div>
 		<hr>
 	</form>
+
+	.<script type="text/javascript">
+	function Submitted() {
+    	alert("Success your appointment has been scheduled! Please check your email for further information.");
+    	document.location.href="Hieu-Nguyen.html";
+	}
+	</script>
+
 </body>
 </html>
