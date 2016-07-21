@@ -28,24 +28,6 @@ $(document).ready(function() {
       });
   });
 
-
-    $('.checkbox:not(:first-child)').on('click', function (e) {
-        var $currentTarget = $(e.currentTarget);
-        var $currentRadio = $currentTarget.children('input');
-        var $radioContainer;
-        var $firstRadio;
-
-        if($currentRadio.prop('checked')) return;
-
-        $radioContainer = $currentTarget.parent();
-        $firstRadio = $radioContainer.children('.checkbox:first-child');
-        // debugger;
-        console.log($firstRadio.find('label'));
-        $firstRadio.find('label')[0].click();
-        // debugger;
-    });
-
-
     $('.js-card').on('click', function(e) {
         e.preventDefault();
         $(this).find('.js-card-pop-up').addClass('is-active');
