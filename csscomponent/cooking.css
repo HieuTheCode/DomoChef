@@ -6,13 +6,24 @@ body {
 	padding-top: 40px;
 }
 
+@media (max-width: 768px) {
+	body {
+		padding-top: 2.6em;
+	}
+}
+
 .jumbotron {
 	background-image: url("../Images/homepage.jpg");
 	height: 500px;
-	margin-top: 75px;	
 	background-size: 100% 100%;
+}
+
+@media (min-width: 768px) {
+	.jumbotron {
+	margin-top: 75px;
 	margin-right: 125px;
-	margin-left: 125px;
+	margin-left: 125px;	
+	}
 }
 
 .jumbotron > .container {
@@ -21,6 +32,11 @@ body {
 	padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+	.jumbotron > .container {
+		margin-top: -1.5em;
+	}
+}
 
 .navbar-header > .navbar-toggle {
 	margin-top: 17px;
@@ -326,6 +342,34 @@ footer {
 	margin-bottom: 45px;
 }
 
+@media (max-width: 768px) {
+	.marginfixingtime {
+		margin-left: .2em;
+		margin-right: auto;
+		width: 100%;
+		margin-bottom: 4em;
+	}
+}
+
+@media (device-width: 411px) {
+	.marginfixingtime {
+		margin-left: .7em;
+	}
+	.borderaroundbody1 {
+		margin-left: 10px;
+	}
+	.bodyonindex {
+		margin-left: .4em;
+	}
+}
+
+@media (device-width: 435px) {
+	.marginfixingtime {
+		margin-left: .5em;
+	}
+}
+
+
 
 
 .well h3 {
@@ -378,6 +422,12 @@ footer {
 
 .borderaroundbody1 {
 	margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+	.borderaroundbody1 {
+		margin-top: -1.7em;
+	}
 }
 
 .borderaroundbody > h5 {
@@ -434,6 +484,18 @@ footer {
     border-radius: 10px;
     text-align: center;
     color: #000000;
+}
+
+@media (max-width: 768px) {
+	.banner {
+		margin-left: auto;
+		margin-right: auto;
+		width: 86%;
+		height: 275px;
+	}
+	.banner-1 {
+		margin-bottom: 1.5em;
+	}
 }
 
 .banner > h4 {
@@ -534,8 +596,19 @@ footer {
     text-shadow: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+	.p-home__hero-banner__cta {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.p-home__hero-banner__cta {
+		font-size: 14px;
+	}
 }
 
 .p-home__hero-banner__cta:hover {
@@ -1003,19 +1076,22 @@ a.hideDisplay span.showdisplayonhover {
 	font-weight: bold;
 	border-radius: 15px;
 	margin-left: -30px;
-	background-color: rgba(245, 245, 245, 0.9);
+	background-color: rgba(245, 245, 245, 0.95);
 	margin-top: -31px;
 }
 
 a.hideDisplay:hover span.showdisplayonhover {
 	display: block;
-		
 }
 
 
 span.showbodyofdisplayonhover {
-	font-size: 10px;
+	font-size: px;
 	font-weight: normal;
+}
+
+span.showdisplayonhover {
+	font-size: 24px;
 }
 
 .stars {
@@ -1051,3 +1127,8 @@ span.showbodyofdisplayonhover {
 	margin-top: -20px;
 }
 
+@media (max-width: 768px) {
+	.domocheflogo {
+		margin-top: -1.4em;
+	}
+}
