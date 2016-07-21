@@ -1061,7 +1061,7 @@ footer {
 }
 
 .img__banner-14 {
-	background-image: url("http://www.kowalskis.com/sites/kowalskis.com/files/chicken-enchiladas.jpg");
+	background-image: url("http://omnivorescookbook.com/wp-content/uploads/2013/10/Homemade-Mexican-Chorizo-Quesadilla-3.jpg");
 }
 
 .img__banner-15 {
@@ -1487,6 +1487,14 @@ a.hideDisplay:hover {
 	text-decoration:none;
 }
 
+.formmargin {
+	margin-top: 10em;
+	margin-left: 14em;
+}
+
+.formbuttonfinal {
+	margin-top: 3em;
+}
 
 
 
