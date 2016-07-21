@@ -8,16 +8,16 @@
 	<meta charset="utf-8">
 	<title>Domo Chef</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="csscomponent/cooking.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="csscomponent/cooking.css">
 </head>
 
-<body data-spy="scroll" data-target="#my-navbar">
+<body data-spy="scroll" data-target="#my-navbar" class="loginbody">
 	<!-- Navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar"> 
 		<div class="container">
@@ -48,12 +48,46 @@
 		</div><!-- End Container -->
 	</nav><!-- End navbar -->
 
+	<form method="post" action="index.html">
+		<div class="box">
+			<h1 class="big-message">sign in</h1>
+			<input type="email" name="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" placeholder="email"/>
+  			<input type="password" name="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" placeholder="password" />
+  			<a href="#"><div class="btnlogin">LogIn</div></a> <!-- End Btn -->
+  		</div> <!-- End Box -->
+  	</form>
+	<p class="passwordforget">Forgot your password? <u style="color:#eea032;">Click Here!</u></p>
 
 
 
 
+<!-- Footer -->
 
+<footer>
+  <div class="container text-center planalessonmargin">
+     <hr>
+     <ul class="list-inline">
+        <li><a href="https://www.facebook.com/DomoChef-733229040153007/">
+           <img src="Images/facebook.jpg" alt="facebook" />
+       </a></li>
+       <li><a href="https://twitter.com/TeamDomoChef">
+           <img src="Images/twitter.jpg" alt="twitter" />
+       </a></li>
+       <li><a href="https://www.instagram.com/teamdomochef/">
+           <img src="Images/instagram.jpg" alt="instagram" />
+       </a></li>
+   </ul>
+   <p>&copy; Copyright 2016</p>
+</div><!-- end container -->
+</footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 
 </body>
 </html>
+
+<!-- Pass on roots to inspiring cooks -->
