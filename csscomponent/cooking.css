@@ -557,6 +557,10 @@ footer {
     background: rgba(255, 255, 255, 0.5);
 }
 
+.banner__text-box > h4 {
+	font-weight: bold;
+}
+
 .imgadded > h4 {
 	font-size: 24px;
 }
@@ -975,10 +979,10 @@ footer {
 }
 
 .img__spacing {
-	margin-top: -2em;
+	margin-top: -3.5em;
 	margin-left: 8em;
 	margin-right: -5em;
-	margin-bottom: 7em;
+	margin-bottom: 8em;
 }
 
 
@@ -1004,7 +1008,7 @@ footer {
 }
 
 .img__banner-1 {
-	background-image: url("https://pleasureinlearning.files.wordpress.com/2014/08/fries_20and_20burger_1_.jpg");
+	background-image: url("http://www.kitchenelly.com/wp-content/uploads/2009/11/BurgerPlate1.jpg");
 }
 
 .img__banner-2 {
@@ -1024,7 +1028,7 @@ footer {
 }
 
 .img__banner-6 {
-	background-image: url("http://images.wisegeek.com/quiche.jpg");
+	background-image: url("http://stockarch.com/files/13/09/homemade_quiche.jpg");
 }
 
 .img__banner-7 {
@@ -1040,7 +1044,7 @@ footer {
 }
 
 .img__banner-10 {
-	background-image: url("http://photo.elsoar.com/wp-content/images/Italian-Pasta-Dishe-I.jpg");
+	background-image: url("http://www.melskitchencafe.com/wp-content/uploads/2013/04/spaghetti-Top-Lighten-JPG.jpg");
 }
 
 .img__banner-11 {
@@ -1052,7 +1056,7 @@ footer {
 }
 
 .img__banner-13 {
-	background-image: url("https://cbspittsburgh.files.wordpress.com/2012/04/tacos.jpg");
+	background-image: url("https://franciscanalliancenwi.files.wordpress.com/2013/08/tacos.jpg");
 }
 
 .img__banner-14 {
@@ -1095,7 +1099,7 @@ footer {
 }
 
 .banner__text-box-2 > h4 {
-	font-size: 24px;
+	font-size: 18px;
 	margin-bottom: -1px;
 	margin-top: -1px;
 	letter-spacing: 4px;
@@ -1104,6 +1108,13 @@ footer {
 .banner__text-box-2 > p {
 	margin-top: 5px;
 	letter-spacing: 1px;
+}
+
+.chickenmasala {
+	font-size: 12px;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	letter-spacing: 4px;
 }
 
 a.hideDisplay {
